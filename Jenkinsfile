@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'maven-jenkins'  // Nom défini dans Global Tool Configuration
+    }
 
     stages {
         stage('Checkout') {

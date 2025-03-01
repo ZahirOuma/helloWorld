@@ -3,6 +3,10 @@ pipeline {
     tools {
         maven 'maven-jenkins'  // Nom défini dans Global Tool Configuration
     }
+    triggers {
+        githubPush()  // Déclenche automatiquement le pipeline à chaque push sur GitHub
+    }
+
 
     stages {
         stage('Checkout') {

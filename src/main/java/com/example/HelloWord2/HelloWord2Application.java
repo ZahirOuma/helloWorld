@@ -13,6 +13,6 @@ public class HelloWord2Application {
 	public static void main(String[] args) {
 		logger.info("🚀 Démarrage de l'application HelloWord2...");
 		SpringApplication.run(HelloWord2Application.class, args);
-		logger.info("✅ Application démarrée avec succès !");
+		logger.info(" Application démarrée avec succès !");
 	}
 }
